@@ -109,7 +109,7 @@ nav ul li a {
 	height:500px;
 	margin-top: 1px;
 	position: relative;
-	background: url('https://raw.githubusercontent.com/hyperosmosis/Personal-Design/master/Images/Vista.JPG') no-repeat center;
+	background: url('https://github.com/hyperosmosis/Portfolio/blob/master/Images/Vista.JPG?raw=true') no-repeat center;
 	background-size: cover;
 }
 
@@ -174,7 +174,7 @@ nav ul li a {
 	margin-top: 1px;
 	margin-bottom: 50px;
 	position: relative;
-	background: url('https://github.com/hyperosmosis/Website/blob/master/Images/contact.jpg?raw=true') no-repeat center;
+	background: url('https://github.com/hyperosmosis/Portfolio/blob/master/Images/contact.jpg?raw=true') no-repeat center;
 	background-size: cover;
 }
 
