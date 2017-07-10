@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+
+/* Global */
+body {
+	background-color: #fff;
+	color: #777;
+	font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+img {
+  max-width: 100%
+}
+
+a {
+	text-decoration: none;
+	color: #444;
+}
+
+a:hover {
+  color: #C0C0C0;
+}
+
+h2 {
+	color: #444;
+	font-size: 50px;
+	text-align: right;
+	line-height: 85%;
+}
+
+h3 {
+	font-size: 16px;
+	font-family: 'Playfair Display', serif;
+	font-style: oblique;
+}
+
+p {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: black;
+	font-size: 12px;
+	padding-bottom: 6px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.container{
+	padding: 0 10px;
+	width: 960px;
+	height: 500px;
+}
+
+
+
+/* Header */
+
+header {
+	height: 120px;
+	padding-bottom: 15px;
+}
+
+header h1 {
+	float: left;
+	margin-top: 32px;
+	width: 250px;
+	display: block;
+}
+
+
+nav {
+	float: right;
+	position: relative;
+	margin-right: 20px;
+}
+
+nav ul li {
+	float: left;
+	display: inline-block;
+	margin-top: 70px;
+}
+
+nav ul li a {
+	color: #444;
+	text-transform: uppercase;
+	display: block;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	margin-right: 25px;
+}
+
+#menu-icon {
+	margin-top: 50px;
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: url('../Images/Menu-Icon.png') center;
+	background-size: contain;
+}
+
+/* Main Page */
+#main-page {
+	padding-top: 1px;
+	height:500px;
+	margin-top: 1px;
+	position: relative;
+	background: url('https://raw.githubusercontent.com/hyperosmosis/Personal-Design/master/Images/Vista.JPG') no-repeat center;
+	background-size: cover;
+}
+
+#main-page h2 {
+	margin: 180px 0 40px 0;
+}
+
+
+/* About */
+
+#about {
+	clear:both;
+	padding: 0 50px;
+	margin-top: 1px;
+	margin:0 auto;
+}
+
+
+.aboutimg {
+	width: 500px;
+	float:left;
+	padding-right:40px;
+}
+
+.content {
+    float: left;
+	width: 300px;
+}
+
+/* Thumbnail */
+
+.thumbnails {
+	margin-right: -5px;
+}
+
+.thumbnails a {
+	float: left;
+	width: 20%;
+	margin-right: 5px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+}
+
+.thumbnails img {
+	display: block;
+}
+
+.thumbnails:hover img{
+	opacity: .6;
+}
+
+.thumbnails img:hover {
+	opacity: 1;
+}
+
+/* Contact */
+
+#contactimg {
+	padding-top: 1px;
+	height:250px;
+	width: auto;
+	margin-top: 1px;
+	margin-bottom: 50px;
+	position: relative;
+	background: url('https://github.com/hyperosmosis/Website/blob/master/Images/contact.jpg?raw=true') no-repeat center;
+	background-size: cover;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+h2 {
+	display: none;
+}
+
+#menu-icon {
+	display:inline-block;
+}
+	
+nav ul, nav:active ul { 
+	display: none;
+	position: absolute;
+	background: #fff;
+	opacity : 0.8;
+	center:5px;
+	right: -10px;
+	top: 90px;
+	width: 175px;
+	text-align: center;
+	z-index: 2;
+}
+
+#main-page {
+	z-index: 1;
+}
+
+nav ul li {
+	width: 100%;
+	padding: 8px 0 15px 0;
+	padding-left: 12px;
+	margin: 0px;
+}
+
+nav:hover ul {
+	display: block;
+}
+
+.aboutimg { 
+    float: none;
+    margin-right:0;
+    width:auto;
+    border:0;  
+	padding-right:0px;
+}
+}
+
+@media screen and (max-width: 615px) {
+.content {
+    float: center;
+	width: 100%;
+	padding-top: 15px;
+}
+}
